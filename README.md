@@ -1,1 +1,65 @@
 # shop99
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>My Fashion Shop</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f8f8; }
+    header { background: #222; color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 20px; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ff9800; }
+    .products { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; padding: 30px; }
+    .card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: 0.2s; }
+    .card:hover { transform: scale(1.03); }
+    .card img { width: 100%; height: 280px; object-fit: cover; }
+    .card h3 { margin: 12px; font-size: 18px; }
+    .price { margin: 0 12px 15px; font-weight: bold; color: green; }
+    footer { background: #222; color: #fff; text-align: center; padding: 15px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👕 My Fashion Shop</h1>
+    <nav>
+      <a href="#">เสื้อ</a>
+      <a href="#">กางเกง</a>
+      <a href="#">แจ็คเก็ต</a>
+      <a href="#">สินค้าใหม่</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/220x280/87CEEB/000000?text=T-Shirt" alt="เสื้อยืด">
+      <h3>เสื้อยืด Oversize</h3>
+      <p class="price">฿250</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/220x280/708090/ffffff?text=Jeans" alt="กางเกงยีนส์">
+      <h3>กางเกงยีนส์ผู้ชาย</h3>
+      <p class="price">฿550</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/220x280/2F4F4F/ffffff?text=Jacket" alt="แจ็คเก็ต">
+      <h3>แจ็คเก็ตเท่ๆ</h3>
+      <p class="price">฿890</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/220x280/FFC0CB/000000?text=Dress" alt="เดรส">
+      <h3>เดรสผู้หญิง</h3>
+      <p class="price">฿690</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 ที่อยู่ร้าน: กรุงเทพฯ | ☎️ 099-999-9999 | IG: @myfashionshop</p>
+  </footer>
+
+</body>
+</html>
